@@ -6,10 +6,17 @@
 
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+main {
     background-color: #FEFFF5;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,9 +38,14 @@ header {
 
 nav a {
     font-size: 15px;
-    margin-right: 8px;
+    margin-right: 10px;
     text-decoration: none;
     color: #676767;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .join_cta {
@@ -44,8 +56,12 @@ nav a {
     font-weight: bold;
 }
 
+.join_cta:hover {
+    background-color: #5e3722;
+}
+
 .Hero {
-    margin-top: 80px;
+    margin-top: 135px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -76,4 +92,187 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: end;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 15px;
+    background-color: white;
+}
+
+.partners img {
+    height: 70px;
+}
+
+.collective {
+    height: 40px;
+}
+
+.first-line {
+    height: 11px;
+    background-color: #FAC44F; 
+    width: 60%;
+    margin-bottom: 3px;
+}
+
+.second-line {
+    height: 7px;
+    background-color: #FAC44F; 
+    width: 30%;
+    margin-bottom: 3px;
+}
+
+.title {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FAC44F;
+}
+
+section {
+    padding: 30px 0 50px 0;
+}
+
+.section-body p {
+    font-family: poppins;
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 25px;
+}
+
+.section-body p span {
+    color: #FAC44F;
+}
+
+.problem, .methodology, .award-section {
+    background-color: #FEFFF5;
+}
+
+.web-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.web-title h1 {
+    color: #154B42;
+    text-align: center;
+}
+
+.web-title div {
+    background-color: #FAC44F;
+    height: 1px;
+    width: 21%;
+}
+
+#award-underline {
+    width: 27%;
+}
+
+.cards, .problem-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cards {
+    justify-content: start;
+    margin-left: 70px;
+}
+
+.problem-cards div {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #5AB5A6;
+    width: 350px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.problem-cards div h1, .cards h1, .methodology-cards h1{
+    font-size: 25px;
+    text-align: left;
+    color: white;
+}
+
+.problem-cards div p {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.problem-cards .icon {
+    align-self: center;
+    font-size: 30px;
+}
+
+.problem-cards .middle {
+    background-color: #E8C476;
+}
+
+.cards > div {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: #154B42;
+    border: 1px solid #808080;
+}
+
+.card-title {
+    border-bottom: 1px solid black;
+    padding: 20px;
+    width: 100%;
+}
+
+.cards h1, .methodology-cards h1 {
+    color: black;
+}
+
+.body {
+    padding: 0 20px;
+}
+
+.body p {
+    font-size: 18px;
+}
+
+.methodology-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.methodology-cards div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    width: 60%;
+    border-left: 3px solid #15253F;
+}
+
+.methodology-cards .middle-card {
+    border-left: 3px solid #FAC44F;   
 }
