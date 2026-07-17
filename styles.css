@@ -178,7 +178,7 @@ section {
     width: 27%;
 }
 
-.cards, .problem-cards {
+.cards, .problem-cards, .team-cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -186,7 +186,7 @@ section {
     margin-top: 40px;
 }
 
-.cards {
+.cards, .team-cards{
     justify-content: start;
     margin-left: 70px;
 }
@@ -426,4 +426,24 @@ section {
         #5e3722 0 30px,      /* dash length */
         transparent 30px 55px /* gap */
     );
+}
+
+.team-cards {
+    gap: 50px;
+}
+
+.team-cards div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.team-cards h1 {
+    font-size: 25px;
+}
+
+.team-cards p {
+    font-size: 18px;
 }
