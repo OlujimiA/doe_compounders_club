@@ -11,6 +11,7 @@ body {
 
 main {
     background-color: #FEFFF5;
+    height: 100vh;
 }
 
 p {
@@ -544,4 +545,8 @@ footer {
 
 .footer-copy p {
     font-size: 12px;
+}
+
+.links ul a {
+    text-decoration: none;
 }
