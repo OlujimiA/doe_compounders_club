@@ -11,7 +11,6 @@ body {
 
 main {
     background-color: #FEFFF5;
-    height: 100vh;
 }
 
 p {
@@ -21,13 +20,13 @@ p {
 header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
-    border: 1px solid #808080;
+    padding: 10px 30px;
+    border-bottom: 1px solid #808080;
     background-color: white;
 }
 
@@ -54,7 +53,7 @@ nav a:hover, .links li:hover{
     text-decoration: underline;
 }
 
-.join_cta {
+.join_cta, .join_cta_mobile {
     color: white;
     background-color: #A5603B;
     border-radius: 10px;
@@ -62,9 +61,22 @@ nav a:hover, .links li:hover{
     font-weight: bold;
 }
 
+.join_cta_mobile {
+    width: 170px;
+    display: none;
+}
+
 .join_cta:hover {
     background-color: #5e3722;
 }
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    cursor: pointer;
+}
+
 
 .Hero {
     padding-top: 135px;
@@ -74,6 +86,11 @@ nav a:hover, .links li:hover{
     align-items: center;
     flex-direction: column;
     gap: 30px;
+}
+
+.Hero-text {
+    max-width: 460px;
+    margin: 0 15px;
 }
 
 .Hero-text h1 {
@@ -98,6 +115,7 @@ nav a:hover, .links li:hover{
     display: flex;
     justify-content: space-between;
     align-items: end;
+    flex-wrap: wrap;
 }
 
 .partners {
@@ -107,6 +125,7 @@ nav a:hover, .links li:hover{
     padding: 25px;
     gap: 15px;
     background-color: white;
+    flex-wrap: wrap;
 }
 
 .partners img {
@@ -140,6 +159,11 @@ nav a:hover, .links li:hover{
 
 section {
     padding: 30px 0 50px 0;
+}
+
+.section-body {
+    display: flex;
+    width: 80%;
 }
 
 .section-body p {
@@ -186,6 +210,7 @@ section {
     align-items: center;
     gap: 30px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .cards, .team-cards{
@@ -200,8 +225,9 @@ section {
     flex-direction: column;
     gap: 20px;
     background-color: #5AB5A6;
-    width: 350px;
-    height: 400px;
+    width: 25%;
+    min-width: 262px;
+    min-height: 400px;
     padding: 30px;
     border-radius: 8px;
 }
@@ -289,6 +315,7 @@ section {
     align-items: center;
     gap: 45px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .award-card {
@@ -300,9 +327,10 @@ section {
     padding: 15px;
     gap: 15px;
     text-align: center;
-    width: fit-content;
+    max-width: 391px;
     border-radius: 8px;
     border: 1px solid #a5a5a5;
+    margin: 0 15px;
 }
 
 .award-card span {
@@ -316,10 +344,10 @@ section {
 
 .award-card img {
     border-radius: 8px;
+    width: 350px;
 }
 
 .award-description {
-    width: 359px;
     margin-bottom: 30px;
 }
 
@@ -331,13 +359,14 @@ section {
 } 
 
 .quote div {
-    width: 400px;
+    max-width: 400px;
 }
 
 .excerpt {
     display: flex;
     justify-content: start;
     gap: 10px;
+    margin: 0 15px;
 }
 
 .excerpt .end-quote {
@@ -355,6 +384,8 @@ section {
     margin-top: 40px;
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .roadmap-container {
@@ -363,7 +394,6 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    flex: 1;
 }
 
 .roadmap-card {
@@ -375,7 +405,9 @@ section {
     gap: 30px;
     border: 1px solid #808080;
     border-radius: 8px;
-    width: 364px;
+    max-width: 364px;
+    margin: 0 20px;
+    text-align: center;
     background-color: white;
 }
 
@@ -478,7 +510,7 @@ footer {
 .hyperlinks {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 7px;
 }
 
@@ -487,6 +519,8 @@ footer {
     justify-content: space-between;
     align-items: start;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 70px;
 }
 
 .footer-description {
@@ -549,4 +583,70 @@ footer {
 
 .links ul a {
     text-decoration: none;
+}
+
+@media (max-width: 850px) {
+    nav,
+    .nav.join_cta {
+        display: none;
+    }
+
+    .join_cta_mobile {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-top: 1px solid #ddd;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    nav.active a {
+        margin: 0;
+    }
+}
+
+@media (max-width: 904px) {
+    .image {
+        margin: 0;
+    }
+
+    .image img {
+        width: 100;
+    }
+
+    .Hero {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .section-body p {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+    .award-card img, .roadmap-card img {
+        width: 270px;
+    }
+
+    #description {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
 }

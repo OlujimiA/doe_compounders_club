@@ -14,20 +14,27 @@
             <img src="assets/images/doecc_logo.png" alt="Logo of DOE Compounders Club" width="35">
             <p class="logo-text">DOE Compounders Club</p>
         </div>
-        <nav>
+        <nav id="nav-menu">
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
             <a href="#solution">Our Solution</a>
             <a href="#roadmap">Roadmap</a>
             <a href="#team">Team</a>
+
+            <button onclick="join()" class="join_cta_mobile">
+                Join Our Community
+            </button>
         </nav>
-        <button onclick="join()" class="join_cta">Join Our Community</button>
+        <button onclick="join()" class="nav join_cta">Join Our Community</button>
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
     </header>
     <main id="home">
         <div class="Hero">
             <div class="Hero-text">
                 <h1>We help you make<br><span>"Dough"</span></h1>
-                <p>Master value investing through practical lessons, real market<br>insights, and proven investing principles tailored to the<br><b>Nigerian Stock Exchange.</b></p>
+                <p>Master value investing through practical lessons, real market insights, and proven investing principles tailored to the<br><b>Nigerian Stock Exchange.</b></p>
             </div>
             <div style="width: 18px; height: 1px; background-color: #B9B9B9;"></div>
             <button onclick="join()" class="join_cta">Join our Community</button>
@@ -53,8 +60,8 @@
             <h1>About Us</h1>
         </div>
         <div class="section-body">
-            <p><b>DOE Compounders Club</b> helps young Nigerians beat inflation and grow real<br>wealth through the Nigerian stock market. We give members equity research,<br>a model portfolio, and direct mentorship from a live fund manager — while<br>they keep full control of their own money and decisions.<br><br>
-            Our live portfolio has returned 87.1% since January 2024, real capital, real<br>trades, no simulation.</p>
+            <p><b>DOE Compounders Club</b> helps young Nigerians beat inflation and grow real wealth through the Nigerian stock market. We give members equity research, a model portfolio, and direct mentorship from a live fund manager — while they keep full control of their own money and decisions.<br><br>
+            Our live portfolio has returned 87.1% since January 2024, real capital, real trades, no simulation.</p>
         </div>
     </section>
     <section id="problem" class="problem">
@@ -71,7 +78,7 @@
             <div class="middle">
                 <h1 class="icon">?</h1>
                 <h1>No Financial<br>Literacy</h1>
-                <p>Most Young Nigerians have no knowledge of how to preserve and grow wealth especially using the capital markets. No expertise, no time to research stocks.</p>
+                <p>Most Young Nigerians have no knowledge of how to preserve and grow wealth especially using the capital markets.</p>
             </div>
             <div>
                 <h1 class="icon">X</h1>
@@ -89,7 +96,7 @@
             <h1 style="color: #5AB5A6;">Our Solution</h1>
         </div>
         <div class="section-body">
-            <p><b><span>A Curated Equity Research Club</span> empowering Gen Z to build real wealth<br>in the Nigerian market.</b></p> 
+            <p><b><span>A Curated Equity Research Club</span> empowering Gen Z to build real wealth in the Nigerian market.</b></p> 
         </div>
         <div class="cards">
             <div style="background-color: #EAFFFB;">
@@ -132,15 +139,13 @@
             <div id="award-underline"></div>
         </div>
         <div class="award">
-            <div>
-                <div class="award-card">
-                    <img src="assets/images/Startup6.0.jpg" alt=" " width="350px">
-                    <div>
-                        <h1><span>Startup 6.0</span> winner</h1>
-                        <p id="description">Awarded to us by <b>Nile University of Nigeria<b></p>
-                    </div>
-                    <div class="award-description"><p>Startup 6.0 is the 6th edition of the annual student entrepreneurship and innovation event at the Nile University of Nigeria. The program empowers student founders by providing them with funding, mentorship, and a platform to pitch their business ventures to investors and industry experts.</p></div>
+            <div class="award-card">
+                <img src="assets/images/Startup6.0.jpg" alt=" ">
+                <div>
+                    <h1><span>Startup 6.0</span> winner</h1>
+                    <p id="description">Awarded to us by <b>Nile University of Nigeria<b></p>
                 </div>
+                <div class="award-description"><p>Startup 6.0 is the 6th edition of the annual student entrepreneurship and innovation event at the Nile University of Nigeria. The program empowers student founders by providing them with funding, mentorship, and a platform to pitch their business ventures to investors and industry experts.</p></div>
             </div>
             <div class="excerpt">
                 <div class="quote">
@@ -252,8 +257,8 @@
                     </div>
                     <div>
                         <div class="hyperlinks">
-                            <button onclick="join()" class="join_cta">Join Our Community</button>
                             <a href="https://www.linkedin.com/company/doe-compounders-club"><img src="assets/images/devicon-plain_linkedin.png" alt=""></a>
+                            <button onclick="join()" class="join_cta">Join Our Community</button>
                         </div>
                     </div>
                 </div>
