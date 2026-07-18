@@ -167,7 +167,7 @@ section {
 }
 
 .section-body p {
-    font-family: poppins;
+    font-family: poppins, Inter, Arial, Helvetica, sans-serif;
     margin-top: 30px;
     margin-left: 70px;
     font-size: 25px;
@@ -271,6 +271,10 @@ section {
     border-bottom: 1px solid black;
     padding: 20px;
     width: 100%;
+}
+
+.card-title h1 {
+    font-size: 18px;
 }
 
 .cards h1, .methodology-cards h1 {
