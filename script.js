@@ -5,6 +5,13 @@ function join() {
     ).focus();
 }
 
+function join_linkedin(){
+    window.open(
+        "https://www.linkedin.com/company/doe-compounders-club",
+        "_blank"
+    ).focus();   
+}
+
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav-menu");
 
